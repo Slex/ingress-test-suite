@@ -1,0 +1,16 @@
+{
+  "ingressClassName": "exist-nginx",
+  "tests": [
+    {
+      "create": false,
+      "host": "canary.example.com",
+      "path": "/api",
+      "pathType": "Prefix",
+      "expectedStatus": 200,
+      "service": "svc",
+      "namespace": "svc",
+      "port": 80,
+      "extPort": 8080
+    },
+  ]
+}

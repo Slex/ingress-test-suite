@@ -1,0 +1,16 @@
+{
+  "ingressClassName": "nginx",
+  "tests": [
+    {
+      "create": true,
+      "host": "example.com",
+      "path": "/api",
+      "pathType": "Prefix",
+      "expectedStatus": 200,
+      "service": "svc",
+      "namespace": "svc",
+      "port": 80,
+      "extPort": 8080
+    },
+  ]
+}
